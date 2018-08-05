@@ -2,6 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+	<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <Version>1.0.0.0</Version>
+    <Title>DeveLibVipsNuget</Title>
+    <Authors>Devedse</Authors>
+    <Description>A library to call LibVips.exe from C#</Description>
+    <PackageProjectUrl>https://github.com/devedse/DeveLibVipsNuget</PackageProjectUrl>
+    <PackageTags>image;drawing;optimization;libvips</PackageTags>
+    
+    <!-- Workaround to get Code Coverage working, see: https://github.com/Microsoft/vstest-docs/blob/master/docs/analyze.md#coverage -->
+    <DebugType>Full</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
