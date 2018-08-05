@@ -1,1 +1,1 @@
-docker run -it --rm devedse/develinestatesaver /bin/bash
+docker run -it --rm devedse/develibvipsnuget /bin/bash

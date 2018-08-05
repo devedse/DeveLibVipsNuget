@@ -13,6 +13,12 @@ A repository to use the LibVips exe file in C# and provide it as a Nuget package
 |:-------:|
 | [![codecov](https://codecov.io/gh/devedse/DeveLibVipsNuget/branch/master/graph/badge.svg)](https://codecov.io/gh/devedse/DeveLibVipsNuget) |
 
+## Code Quality Status
+
+| SonarQube |
+|:---------:|
+| [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=DeveLibVipsNuget&metric=alert_status)](https://sonarcloud.io/dashboard?id=DeveLibVipsNuget) |
+
 ## Package
 
 | NuGet |

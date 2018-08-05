@@ -1,4 +1,4 @@
 cd ..
 cd ..
-docker build -t devedse/develinestatesaver .
+docker build -t devedse/develibvipsnuget .
 pause

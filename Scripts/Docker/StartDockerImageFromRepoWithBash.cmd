@@ -1,3 +1,3 @@
-docker pull devedse/develinestatesaver:latest
-docker run -it --rm devedse/develinestatesaver:latest /bin/bash
+docker pull devedse/develibvipsnuget:latest
+docker run -it --rm devedse/develibvipsnuget:latest /bin/bash
 pause

@@ -1,3 +1,3 @@
 docker login
-docker push devedse/develinestatesaver:latest
+docker push devedse/develibvipsnuget:latest
 pause

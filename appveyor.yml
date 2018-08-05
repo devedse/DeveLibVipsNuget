@@ -3,6 +3,10 @@ os: Visual Studio 2015
 skip_tags: true
 configuration: Release
 
+environment:
+  sonarqubetoken:
+    secure: ppdeirHI9dsM7NpQgtwIRqXbiqhJZvIyHxOFhnME5HhRFS6IbYZqRppQi7fTqv37
+
 before_build:
   - ps: .\scripts\set-version.ps1
   - cmd: dotnet --info
@@ -10,13 +14,13 @@ before_build:
   - choco install opencover.portable
   - choco install codecov
   - choco install xunit
+  - choco install "msbuild-sonarqube-runner" -y
 
 build_script:
+  - SonarScanner.MSBuild.exe begin /k:"DeveLibVipsNuget" /d:sonar.organization="devedse-github" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.login=%sonarqubetoken% /d:sonar.cs.opencover.reportsPaths=".\DeveLibVipsNuget.Coverage.xml" /d:sonar.coverage.exclusions="DeveLibVipsNuget.ConsoleApp/**/*.cs,DeveLibVipsNuget.Tests/**/*.cs"
   - cmd: dotnet build -c Release
-
-test_script:
-  #- cmd: dotnet test -c release DeveLibVipsNuget.Tests\DeveLibVipsNuget.Tests.csproj
   - OpenCover.Console.exe -register:user -target:"dotnet.exe" -targetargs:"test .\DeveLibVipsNuget.Tests\DeveLibVipsNuget.Tests.csproj -c Release" -oldstyle -output:.\DeveLibVipsNuget.Coverage.xml -filter:"+[DeveLibVipsNuget*]*"
+  - SonarScanner.MSBuild.exe end /d:sonar.login=%sonarqubetoken%
   - codecov -f "DeveLibVipsNuget.Coverage.xml"
   
 after_test:

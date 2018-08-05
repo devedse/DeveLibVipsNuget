@@ -1,2 +1,2 @@
-docker run -it --rm devedse/develinestatesaver
+docker run -it --rm devedse/develibvipsnuget
 pause
