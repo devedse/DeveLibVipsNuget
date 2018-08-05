@@ -15,6 +15,6 @@ A repository to use the LibVips exe file in C# and provide it as a Nuget package
 
 ## Package
 
-| Nuget |
+| NuGet |
 |:-----:|
-| [![NuGet](https://img.shields.io/nuget/v/Nuget.Core.svg)](https://www.nuget.org/packages/DeveLibVipsNuget/) |
+| [![NuGet](https://img.shields.io/nuget/v/DeveLibVipsNuget.svg)](https://www.nuget.org/packages/DeveLibVipsNuget/) |
