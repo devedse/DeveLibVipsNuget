@@ -12,3 +12,9 @@ A repository to use the LibVips exe file in C# and provide it as a Nuget package
 | CodeCov |
 |:-------:|
 | [![codecov](https://codecov.io/gh/devedse/DeveLibVipsNuget/branch/master/graph/badge.svg)](https://codecov.io/gh/devedse/DeveLibVipsNuget) |
+
+## Package
+
+| Nuget |
+|:-----:|
+| [![NuGet](https://img.shields.io/nuget/v/Nuget.Core.svg)](https://www.nuget.org/packages/DeveLibVipsNuget/) |
