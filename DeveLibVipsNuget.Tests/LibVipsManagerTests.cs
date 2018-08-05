@@ -1,4 +1,4 @@
-using System;
+using System.IO;
 using Xunit;
 
 namespace DeveLibVipsNuget.Tests
@@ -8,6 +8,9 @@ namespace DeveLibVipsNuget.Tests
         [Fact]
         public void ExtractsFiles()
         {
+            var vipsFile = LibVipsManager.ExtractAndGetVipsExeFile();
+            var fileExists = File.Exists(vipsFile);
+            Assert.True(fileExists);
         }
     }
 }

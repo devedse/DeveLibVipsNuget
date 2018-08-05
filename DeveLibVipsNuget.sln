@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeveLibVipsNuget", "DeveLibVipsNuget\DeveLibVipsNuget.csproj", "{7D887150-864C-4C87-84DB-41D0C6731FDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeveLibVipsNuget", "DeveLibVipsNuget\DeveLibVipsNuget.csproj", "{7D887150-864C-4C87-84DB-41D0C6731FDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeveLibVipsNuget.Tests", "DeveLibVipsNuget.Tests\DeveLibVipsNuget.Tests.csproj", "{CD2BE90C-B34D-41AE-88E5-C9B4063ED713}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeveLibVipsNuget.Tests", "DeveLibVipsNuget.Tests\DeveLibVipsNuget.Tests.csproj", "{CD2BE90C-B34D-41AE-88E5-C9B4063ED713}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeveLibVipsNuget.Runner", "DeveLibVipsNuget.Runner\DeveLibVipsNuget.Runner.csproj", "{6227D8F4-9A81-4CEB-AFEE-F65496790511}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeveLibVipsNuget.ConsoleApp", "DeveLibVipsNuget.ConsoleApp\DeveLibVipsNuget.ConsoleApp.csproj", "{6227D8F4-9A81-4CEB-AFEE-F65496790511}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
