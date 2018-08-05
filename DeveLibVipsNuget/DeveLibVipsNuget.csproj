@@ -1,0 +1,125 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="LibVips\libasprintf-0.dll" />
+    <None Remove="LibVips\libatomic-1.dll" />
+    <None Remove="LibVips\libcairo-2.dll" />
+    <None Remove="LibVips\libcairo-gobject-2.dll" />
+    <None Remove="LibVips\libcairo-script-interpreter-2.dll" />
+    <None Remove="LibVips\libcharset-1.dll" />
+    <None Remove="LibVips\libcroco-0.6-3.dll" />
+    <None Remove="LibVips\libexif-12.dll" />
+    <None Remove="LibVips\libexpat-1.dll" />
+    <None Remove="LibVips\libffi-6.dll" />
+    <None Remove="LibVips\libfftw3-3.dll" />
+    <None Remove="LibVips\libfontconfig-1.dll" />
+    <None Remove="LibVips\libfreetype-6.dll" />
+    <None Remove="LibVips\libgcc_s_seh-1.dll" />
+    <None Remove="LibVips\libgdk_pixbuf-2.0-0.dll" />
+    <None Remove="LibVips\libgettextlib-0-19-8.dll" />
+    <None Remove="LibVips\libgettextpo-1.dll" />
+    <None Remove="LibVips\libgettextsrc-0-19-8.dll" />
+    <None Remove="LibVips\libgif-7.dll" />
+    <None Remove="LibVips\libgio-2.0-0.dll" />
+    <None Remove="LibVips\libglib-2.0-0.dll" />
+    <None Remove="LibVips\libgmodule-2.0-0.dll" />
+    <None Remove="LibVips\libgobject-2.0-0.dll" />
+    <None Remove="LibVips\libgsf-1-114.dll" />
+    <None Remove="LibVips\libgsf-win32-1-114.dll" />
+    <None Remove="LibVips\libgthread-2.0-0.dll" />
+    <None Remove="LibVips\libharfbuzz-0.dll" />
+    <None Remove="LibVips\libharfbuzz-subset-0.dll" />
+    <None Remove="LibVips\libiconv-2.dll" />
+    <None Remove="LibVips\libintl-9.dll" />
+    <None Remove="LibVips\libjpeg-62.dll" />
+    <None Remove="LibVips\liblcms2-2.dll" />
+    <None Remove="LibVips\libpango-1.0-0.dll" />
+    <None Remove="LibVips\libpangocairo-1.0-0.dll" />
+    <None Remove="LibVips\libpangoft2-1.0-0.dll" />
+    <None Remove="LibVips\libpangowin32-1.0-0.dll" />
+    <None Remove="LibVips\libpixman-1-0.dll" />
+    <None Remove="LibVips\libpng16-16.dll" />
+    <None Remove="LibVips\libquadmath-0.dll" />
+    <None Remove="LibVips\librsvg-2-2.dll" />
+    <None Remove="LibVips\libssp-0.dll" />
+    <None Remove="LibVips\libstdc++-6.dll" />
+    <None Remove="LibVips\libtiff-5.dll" />
+    <None Remove="LibVips\libvips-42.dll" />
+    <None Remove="LibVips\libvips-cpp-42.dll" />
+    <None Remove="LibVips\libvipsCC-42.dll" />
+    <None Remove="LibVips\libwebp-7.dll" />
+    <None Remove="LibVips\libwebpdemux-2.dll" />
+    <None Remove="LibVips\libwebpmux-3.dll" />
+    <None Remove="LibVips\libxml2-2.dll" />
+    <None Remove="LibVips\libz.dll" />
+    <None Remove="LibVips\vips.exe" />
+    <None Remove="LibVips\vipsedit.exe" />
+    <None Remove="LibVips\vipsheader.exe" />
+    <None Remove="LibVips\vipsprofile" />
+    <None Remove="LibVips\vipsthumbnail.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="LibVips\libasprintf-0.dll" />
+    <EmbeddedResource Include="LibVips\libatomic-1.dll" />
+    <EmbeddedResource Include="LibVips\libcairo-2.dll" />
+    <EmbeddedResource Include="LibVips\libcairo-gobject-2.dll" />
+    <EmbeddedResource Include="LibVips\libcairo-script-interpreter-2.dll" />
+    <EmbeddedResource Include="LibVips\libcharset-1.dll" />
+    <EmbeddedResource Include="LibVips\libcroco-0.6-3.dll" />
+    <EmbeddedResource Include="LibVips\libexif-12.dll" />
+    <EmbeddedResource Include="LibVips\libexpat-1.dll" />
+    <EmbeddedResource Include="LibVips\libffi-6.dll" />
+    <EmbeddedResource Include="LibVips\libfftw3-3.dll" />
+    <EmbeddedResource Include="LibVips\libfontconfig-1.dll" />
+    <EmbeddedResource Include="LibVips\libfreetype-6.dll" />
+    <EmbeddedResource Include="LibVips\libgcc_s_seh-1.dll" />
+    <EmbeddedResource Include="LibVips\libgdk_pixbuf-2.0-0.dll" />
+    <EmbeddedResource Include="LibVips\libgettextlib-0-19-8.dll" />
+    <EmbeddedResource Include="LibVips\libgettextpo-1.dll" />
+    <EmbeddedResource Include="LibVips\libgettextsrc-0-19-8.dll" />
+    <EmbeddedResource Include="LibVips\libgif-7.dll" />
+    <EmbeddedResource Include="LibVips\libgio-2.0-0.dll" />
+    <EmbeddedResource Include="LibVips\libglib-2.0-0.dll" />
+    <EmbeddedResource Include="LibVips\libgmodule-2.0-0.dll" />
+    <EmbeddedResource Include="LibVips\libgobject-2.0-0.dll" />
+    <EmbeddedResource Include="LibVips\libgsf-1-114.dll" />
+    <EmbeddedResource Include="LibVips\libgsf-win32-1-114.dll" />
+    <EmbeddedResource Include="LibVips\libgthread-2.0-0.dll" />
+    <EmbeddedResource Include="LibVips\libharfbuzz-0.dll" />
+    <EmbeddedResource Include="LibVips\libharfbuzz-subset-0.dll" />
+    <EmbeddedResource Include="LibVips\libiconv-2.dll" />
+    <EmbeddedResource Include="LibVips\libintl-9.dll" />
+    <EmbeddedResource Include="LibVips\libjpeg-62.dll" />
+    <EmbeddedResource Include="LibVips\liblcms2-2.dll" />
+    <EmbeddedResource Include="LibVips\libpango-1.0-0.dll" />
+    <EmbeddedResource Include="LibVips\libpangocairo-1.0-0.dll" />
+    <EmbeddedResource Include="LibVips\libpangoft2-1.0-0.dll" />
+    <EmbeddedResource Include="LibVips\libpangowin32-1.0-0.dll" />
+    <EmbeddedResource Include="LibVips\libpixman-1-0.dll" />
+    <EmbeddedResource Include="LibVips\libpng16-16.dll" />
+    <EmbeddedResource Include="LibVips\libquadmath-0.dll" />
+    <EmbeddedResource Include="LibVips\librsvg-2-2.dll" />
+    <EmbeddedResource Include="LibVips\libssp-0.dll" />
+    <EmbeddedResource Include="LibVips\libstdc++-6.dll" />
+    <EmbeddedResource Include="LibVips\libtiff-5.dll" />
+    <EmbeddedResource Include="LibVips\libvips-42.dll" />
+    <EmbeddedResource Include="LibVips\libvips-cpp-42.dll" />
+    <EmbeddedResource Include="LibVips\libvipsCC-42.dll" />
+    <EmbeddedResource Include="LibVips\libwebp-7.dll" />
+    <EmbeddedResource Include="LibVips\libwebpdemux-2.dll" />
+    <EmbeddedResource Include="LibVips\libwebpmux-3.dll" />
+    <EmbeddedResource Include="LibVips\libxml2-2.dll" />
+    <EmbeddedResource Include="LibVips\libz.dll" />
+    <EmbeddedResource Include="LibVips\vips.exe" />
+    <EmbeddedResource Include="LibVips\vipsedit.exe" />
+    <EmbeddedResource Include="LibVips\vipsheader.exe" />
+    <EmbeddedResource Include="LibVips\vipsprofile" />
+    <EmbeddedResource Include="LibVips\vipsthumbnail.exe" />
+  </ItemGroup>
+
+</Project>
