@@ -8,7 +8,7 @@
     <Version>1.0.0.0</Version>
     <Title>DeveLibVipsNuget</Title>
     <Authors>Devedse</Authors>
-    <Description>A library to call LibVips.exe from C#</Description>
+    <Description>A library to call LibVips.exe from C#. (Does not contain .NET Bindings but is easily made up to date. See NuGet page)</Description>
     <PackageProjectUrl>https://github.com/devedse/DeveLibVipsNuget</PackageProjectUrl>
     <PackageTags>image;drawing;optimization;libvips</PackageTags>
     
