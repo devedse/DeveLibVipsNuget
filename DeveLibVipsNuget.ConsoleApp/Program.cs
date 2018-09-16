@@ -3,9 +3,9 @@ using System.IO;
 
 namespace DeveLibVipsNuget.Runner
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             var vipsFile = LibVipsManager.ExtractAndGetVipsExeFile();
             if (File.Exists(vipsFile))

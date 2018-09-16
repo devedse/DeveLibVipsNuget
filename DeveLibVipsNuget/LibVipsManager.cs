@@ -12,7 +12,7 @@ namespace DeveLibVipsNuget
         private const string LibVipsExeFile = "vips.exe";
 
         private static bool ExtractedFilesOnce = false;
-        private static object Lockject = new object();
+        private static readonly object Lockject = new object();
 
         private static Lazy<string> LibVipsDirLazy = new Lazy<string>(() =>
         {
@@ -33,19 +33,27 @@ namespace DeveLibVipsNuget
 
             foreach (var resource in resources)
             {
-                var expectedFileName = resource.Substring("DeveLibVipsNuget.LibVips.".Length);
-                var obtainedFileStream = executingAssembly.GetManifestResourceStream(resource);
-                var destPath = Path.Combine(LibVipsDir, expectedFileName);
-
-                if (!File.Exists(destPath) || obtainedFileStream.Length != new FileInfo(destPath).Length)
+                try
                 {
-                    Console.WriteLine($"Extracting {expectedFileName}...");
-                    using (var fs = new FileStream(destPath, FileMode.Create, FileAccess.Write, FileShare.Read))
+                    var expectedFileName = resource.Substring("DeveLibVipsNuget.LibVips.".Length);
+                    var obtainedFileStream = executingAssembly.GetManifestResourceStream(resource);
+                    var destPath = Path.Combine(LibVipsDir, expectedFileName);
+
+                    if (!File.Exists(destPath) || obtainedFileStream.Length != new FileInfo(destPath).Length)
                     {
-                        var bytesToWrite = new byte[obtainedFileStream.Length];
-                        obtainedFileStream.Read(bytesToWrite, 0, bytesToWrite.Length);
-                        fs.Write(bytesToWrite, 0, bytesToWrite.Length);
+                        Console.WriteLine($"Extracting {expectedFileName}...");
+                        using (var fs = new FileStream(destPath, FileMode.Create, FileAccess.Write, FileShare.Read))
+                        {
+                            var bytesToWrite = new byte[obtainedFileStream.Length];
+                            obtainedFileStream.Read(bytesToWrite, 0, bytesToWrite.Length);
+                            fs.Write(bytesToWrite, 0, bytesToWrite.Length);
+                        }
                     }
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine($"Exception when extracting LibVips, resource currently handling: {resource}");
+                    throw;
                 }
             }
 
