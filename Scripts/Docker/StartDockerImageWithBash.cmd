@@ -1,1 +1,0 @@
-docker run -it --rm devedse/develibvipsnuget /bin/bash
