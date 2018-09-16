@@ -25,7 +25,6 @@ build_script:
   
 after_test:
   - cmd: dotnet pack -c Release DeveLibVipsNuget\
-  - cmd: Scripts\GoRepack.cmd
 
 artifacts:
 - path: Scripts\DeveLibVipsNuget.7z
