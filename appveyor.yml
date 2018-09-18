@@ -19,7 +19,7 @@ before_build:
 build_script:
   - SonarScanner.MSBuild.exe begin /k:"DeveLibVipsNuget" /d:sonar.organization="devedse-github" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.login=%sonarqubetoken% /d:sonar.cs.opencover.reportsPaths=".\DeveLibVipsNuget.Coverage.xml" /d:sonar.coverage.exclusions="DeveLibVipsNuget.ConsoleApp/**/*.cs,DeveLibVipsNuget.Tests/**/*.cs"
   - cmd: dotnet build -c Release
-  - OpenCover.Console.exe -register:user -target:"dotnet.exe" -targetargs:"test .\DeveLibVipsNuget.Tests\DeveLibVipsNuget.Tests.csproj -c Release" -oldstyle -output:.\DeveLibVipsNuget.Coverage.xml -filter:"+[DeveLibVipsNuget*]*"
+  - OpenCover.Console.exe -register:user -target:"dotnet.exe" -targetargs:"test .\DeveLibVipsNuget.Tests\DeveLibVipsNuget.Tests.csproj -c Release" -oldstyle -returntargetcode -output:.\DeveLibVipsNuget.Coverage.xml -filter:"+[DeveLibVipsNuget*]*"
   - SonarScanner.MSBuild.exe end /d:sonar.login=%sonarqubetoken%
   - codecov -f "DeveLibVipsNuget.Coverage.xml"
   
